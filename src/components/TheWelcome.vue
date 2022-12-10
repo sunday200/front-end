@@ -458,14 +458,14 @@
 
         
         // TRYYYY UNTUK PPM
-        axios.get('http://localhost:40027/alat-1-ppm-hasil')  // API nya cuma berisi 1 data aja
+        axios.get('http://localhost:3000/alat-1-ppm-hasil')  // API nya cuma berisi 1 data aja
         .then(response => {
             console.log(response.data.data)
             this.node1 = response.data.data; 
         });
 
         axios
-        .get('http://localhost:40027/alat-1-ppm') // Berisi 20 Data
+        .get('http://localhost:3000/alat-1-ppm') // Berisi 20 Data
         .then(response => {
             console.log("awal")
             this.dataRaw = response.data.data;

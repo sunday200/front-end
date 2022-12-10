@@ -237,7 +237,7 @@ export default{
 
         getItems() {
         axios
-        .get('http://localhost:40027/alat-1-ppm')
+        .get('http://localhost:3000/alat-1-ppm')
         .then(response => {
             console.log("awal")
             this.dataRaw = response.data.data;
